@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embedded Webpage</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+ 
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+ 
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+ 
+        .content {
+            padding: 15px;
+            background-color: #f4f4f4;
+        }
+ 
+        .iframe-container {
+            flex-grow: 1;
+            height: 80%;
+        }
+ 
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+</style>
+</head>
+<body>
+ 
+    <div class="content">
+<p>This is an external site with salesforce partner portal page in the iFrame</p>
+</div>
+ 
+    <div class="iframe-container">
+<iframe src="https://posigen3--pguat.sandbox.my.site.com/public/s/opportunityadditionalinfo?id=006O300000JB5hNIAT" allowfullscreen></iframe>
+</div>
+ 
+</body>
+</html>
